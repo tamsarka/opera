@@ -1,0 +1,271 @@
+
+<div class="row">
+              <div class="col-lg-10">
+                  <h1 class="page-header" style="margin: 67px 0 20px;">Drone Surveillance </h1>
+              </div>
+              <div class="col-lg-2">
+                <br><br><br>
+                 <!-- <button ui-sref="drone"class="btn  btn-primary btn-block">Connect</button> -->
+              <!-- <a ui-sref="drone"><i class="fa  fa-video-camera fa-fw"></i> Surveillance </span></a> -->
+              </div>
+              <div class="row">
+              <!-- /.col-lg-6 -->
+              <div class="col-lg-4 col-md-6">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                        Battery Meter
+                  </div>
+                    <div class="panel-body">
+                  <div id="container-battery" style="width: 280px; height: 200px; float:center "></div>
+                </div>
+              </div>
+                </div>
+              <div class="col-lg-4 col-md-6" >
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                        Tachometer
+                  </div>
+                    <div class="panel-body">
+                  <div id="container-speed" style="width: 280px; height: 200px;float:left "></div>
+                </div>
+              </div>
+              </div >
+              <div class="col-lg-4 col-md-3">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                        Altimeter
+                  </div>
+                    <div class="panel-body">
+                      <div id="container-altitude" style="width: 300px; height: 200px; float: left"></div>
+                  </div>
+                </div>
+              </div >
+
+              <div class="col-lg-4 col-md-4">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                           Control Parameters
+                      </div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <tbody>
+                                    <tr>
+                                        <td>  State</td>
+                                        <td  ng-model="state">{{state}}</td>
+                                    </tr>
+                                      <tr>
+                                          <td>Pitch</td>
+                                          <td ng-model="pitch">{{pitch}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Roll</td>
+                                          <td ng-model="roll">{{roll}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Yaw</td>
+                                          <td ng-model="yaw">{{yaw}}</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <!-- /.table-responsive -->
+                      </div>
+                      <!-- /.panel-body -->
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+
+              <div class="panel panel-default">
+                      <div class="panel-heading">
+                           Accelerometer Parameters
+                      </div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <tbody>
+                                      <tr>
+                                          <td> Theta </td>
+                                          <td  ng-model="theta">{{theta}}</td>
+                                          <!-- <td class="success" ng-model="altitudeMeters">{{altitudeMeters}}</td> -->
+                                      </tr>
+
+                                      <tr>
+                                          <td>Phi</td>
+                                          <!-- <td class="danger" ng-model="btp">{{btp}}</td> -->
+                                           <td  ng-model="Phi">{{phi}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Psi</td>
+                                          <!-- <td class="danger" ng-model="btp">{{btp}}</td> -->
+                                           <td  ng-model="psi">{{psi}}</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <!-- /.table-responsive -->
+                      </div>
+                      <!-- /.panel-body -->
+                  </div>
+                  <!-- /.panel -->
+              </div>
+              </div>
+              <!-- <div class="row">
+
+            </div> -->
+              <!-- <span  ng-repeat="x in img123 ">
+                    <img ng-src="{{x}}" alt="dsd" width="30%"/ >
+
+
+              </span> -->
+                <!-- <img ng-repeat="x in image " ng-src="{{x}}" alt="dsd" width="30%"/> -->
+              <!-- <img    ng-src="https://s3.amazonaws.com/droneImageBucket007_mnm/drone1478945069030vegTest.jpg" width="30%" /> -->
+
+              <!-- /.col-lg-6 -->
+
+              <div class="row" ng-hide="{{corhide}}">
+                <div class=" col-lg-6 col-md-6">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                           Possible Aberrations
+                      </div>
+                      <!-- /.panel-heading -->
+                      <div class="panel-body">
+              <!-- /.col-lg-6 -->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="myCarousel" data-slide-to="1"></li>
+                <li data-target="myCarousel" data-slide-to="2"></li>
+                <li data-target="myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active"  >
+                  <img ng-src="https://s3.amazonaws.com/droneImageBucket007_mnm/drone1478945069030vegTest.jpg" class="img-responsive" />
+                </div>
+
+                <div class="item " ng-repeat="x in img123 " >
+                  <img ng-src="{{x}}" alt="aws bucket" class="img-responsive"/ >
+                </div>
+
+
+              </div>
+
+              <!-- Left and right controls -->
+                <!-- <span class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </span>
+                <span class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </span> -->
+            </div>
+          </div >
+          </div>
+        </div>
+
+
+            <script>
+            $('.carousel').carousel({
+                interval: 3000,
+
+                wrap: true
+            })
+            .on('click', '.carousel-control', handle_nav);
+
+
+                var handle_nav = function(e) {
+                      e.preventDefault();
+                      var nav = $(this);
+                      nav.parents('.carousel').carousel(nav.data('slide'));
+                }
+                var handle_right = function(e) {
+                      e.preventDefault();
+                      var nav = $(this);
+                      nav.parents('.carousel').carousel(nav.data('prev'));
+                }
+
+                // var handle_right = function(e) {
+                //       e.preventDefault();
+                //         $('.carousel').carousel('prev')
+                // }
+                // .carousel('prev')
+
+
+            </script>
+
+              <div class=" col-lg-6 col-md-6 ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         Perimeter Intrusion
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+            <!-- /.col-lg-6 -->
+            <div id="myCarousel2" class="carousel slide" data-ride="carouse2">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="myCarouse2" data-slide-to="0" class="active"></li>
+              <li data-target="myCarouse2" data-slide-to="1"></li>
+              <li data-target="myCarouse2" data-slide-to="2"></li>
+              <li data-target="myCarouse2" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active"  >
+                <img ng-src="https://s3.amazonaws.com/droneImageBucket007_mnm/human1478945069030vegTest.jpg" class="img-responsive" />
+              </div>
+
+              <div class="item " ng-repeat="x in human123 " >
+                <img ng-src="{{x}}" alt="aws bucket" class="img-responsive" / >
+              </div>
+
+
+            </div>
+
+            <!-- Left and right controls -->
+              <!-- <span class="left carousel-control" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </span>
+              <span class="right carousel-control" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+              </span> -->
+          </div>
+        </div >
+        </div>
+      </div>
+      </div>
+
+          <script>
+          $('.carousel').carousel({
+              interval: 3000,
+
+              wrap: true
+          })
+          .on('click', '.carousel-control', handle_nav);
+
+
+              var handle_nav = function(e) {
+                    e.preventDefault();
+                    var nav = $(this);
+                    nav.parents('.carouse2').carousel(nav.data('slide'));
+              }
+              var handle_right = function(e) {
+                    e.preventDefault();
+                    var nav = $(this);
+                    nav.parents('.carouse2').carousel(nav.data('prev'));
+              }
+
+              // var handle_right = function(e) {
+              //       e.preventDefault();
+              //         $('.carousel').carousel('prev')
+              // }
+              // .carousel('prev')
+
+
+          </script>

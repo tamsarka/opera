@@ -1,0 +1,155 @@
+
+    <div class="col-lg-11">
+        <h1 class="page-header" style="margin: 67px 0 20px;">Weather Station</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+ <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <!-- /.panel-heading -->
+                        <div class="panel-heading">
+                            Performance Matrix
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-body">
+                            <div id="wstn-bar-chart"></div>
+                        </div>
+                    <!-- /.panel -->
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="row">
+                            <div class="col-md-4">
+                        <i class="fa fa-bar-chart-o fa-fw"></i>
+                        Module Temperature & Irradiance
+                        </div >
+
+                              <div class="col-md-8">
+                                <div class="row">
+
+
+                                      <div class="col-md-5" class="input-group date" id="datetimepicker2" >
+                                          <input type="text" class="form-control" placeholder="START" ng-model="startws" datetime-picker hour="23" minute='59' />
+                                      </div>
+                                      <div class="col-md-5"class="input-group date" id="datetimepicker2" >
+                                        <input type="text" class="form-control" placeholder="END" ng-model="endws" datetime-picker hour="23" minute='59' />
+                                      </div>
+                                      <div class="col-md-1"class="input-group date" id="datetimepicker1" ng-click="VnCws(startws,endws)">
+                                       <button type="button" class="btn btn-info btn-sm glyphicon glyphicon-circle-arrow-right"></button>
+                                      </div>
+
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="wstn-line-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Alerts Report
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Priority</th>
+                                        <th>Name</th>
+                                        <th>Occurences</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                        <td>WS1_Comm_Failure</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                        <td>WS1_STR1_Fuse_Failure</td>
+                                        <td>2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div>
+                                <div style="width: 10px; height: 10px; background: red; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">High</div>
+                              </div>
+                              <div style="float:left; margin-left:5px;">
+                                <div style="width: 10px; height: 10px; background: yellow; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">Medium</div>
+                              </div>
+                              <div style="float:left; margin-left:5px;">
+                                <div style="width: 10px; height: 10px; background: aqua; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">Low</div>
+                              </div>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+               </div>
+            </div>
+
+                        <!-- /.panel-heading -->
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Asset Properties
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Manufacturer</th>
+                                                    <th>EDMI</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Model Number</td>
+                                                    <td>Mk6E</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Serial Number</td>
+                                                    <td>1526546</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CT Ratio</td>
+                                                    <td>600A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PT Ratio</td>
+                                                    <td>33k:1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Communication</td>
+                                                    <td>Ethernet</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Technical</td>
+                                                    <td>33kv</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table-responsive -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                        </div>

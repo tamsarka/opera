@@ -1,0 +1,164 @@
+Getting env variables for app opera-solar-soln in org LNT Infotech-Basic / space dev as ritesh.dave@lntinfotech.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "postgres": [
+   {
+    "credentials": {
+     "ID": 0,
+     "binding_id": "3d39b947-596d-4619-ad12-8f9578e09f80",
+     "database": "d913c8d1de5b14afab2e6037c839f3baa",
+     "dsn": "host=10.72.6.143 port=5432 user=u1669ed1ff00c401c8b09d9fa837959a6 password=3be6d3aecc224ebcba6b854d9af1274a dbname=d913c8d1de5b14afab2e6037c839f3baa connect_timeout=5 sslmode=disable",
+     "host": "10.72.6.143",
+     "instance_id": "62babcea-feab-431e-9609-524f4635e789",
+     "jdbc_uri": "jdbc:postgresql://10.72.6.143:5432/d913c8d1de5b14afab2e6037c839f3baa?user=u1669ed1ff00c401c8b09d9fa837959a6\u0026password=3be6d3aecc224ebcba6b854d9af1274a\u0026ssl=false",
+     "password": "3be6d3aecc224ebcba6b854d9af1274a",
+     "port": "5432",
+     "uri": "postgres://u1669ed1ff00c401c8b09d9fa837959a6:3be6d3aecc224ebcba6b854d9af1274a@10.72.6.143:5432/d913c8d1de5b14afab2e6037c839f3baa?sslmode=disable",
+     "username": "u1669ed1ff00c401c8b09d9fa837959a6"
+    },
+    "label": "postgres",
+    "name": "opera-postgres",
+    "plan": "shared-nr",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "rdpg",
+     "postgresql"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "predix-acs": [
+   {
+    "credentials": {
+     "uri": "https://predix-acs.run.aws-usw02-pr.ice.predix.io",
+     "zone": {
+      "http-header-name": "Predix-Zone-Id",
+      "http-header-value": "a18db8c7-3e55-4cac-89f1-44f1731505a2",
+      "oauth-scope": "predix-acs.zones.a18db8c7-3e55-4cac-89f1-44f1731505a2.user"
+     }
+    },
+    "label": "predix-acs",
+    "name": "opera-acs",
+    "plan": "Free",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "predix-asset": [
+   {
+    "credentials": {
+     "instanceId": "26ab08ae-74df-4545-931b-c18cd182d0f5",
+     "scriptEngine_uri": "https://26ab08ae-74df-4545-931b-c18cd182d0f5.predix-script-engine.run.aws-usw02-pr.ice.predix.io",
+     "uri": "https://predix-asset.run.aws-usw02-pr.ice.predix.io",
+     "zone": {
+      "http-header-name": "Predix-Zone-Id",
+      "http-header-value": "26ab08ae-74df-4545-931b-c18cd182d0f5",
+      "oauth-scope": "predix-asset.zones.26ab08ae-74df-4545-931b-c18cd182d0f5.user"
+     }
+    },
+    "label": "predix-asset",
+    "name": "opera-asset",
+    "plan": "Free",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "predix-timeseries": [
+   {
+    "credentials": {
+     "ingest": {
+      "uri": "wss://gateway-predix-data-services.run.aws-usw02-pr.ice.predix.io/v1/stream/messages",
+      "zone-http-header-name": "Predix-Zone-Id",
+      "zone-http-header-value": "ad7a7f00-9dcb-4454-a492-96ec8d26fff7",
+      "zone-token-scopes": [
+       "timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.user",
+       "timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.ingest"
+      ]
+     },
+     "query": {
+      "uri": "https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1/datapoints",
+      "zone-http-header-name": "Predix-Zone-Id",
+      "zone-http-header-value": "ad7a7f00-9dcb-4454-a492-96ec8d26fff7",
+      "zone-token-scopes": [
+       "timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.user",
+       "timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.query"
+      ]
+     }
+    },
+    "label": "predix-timeseries",
+    "name": "opera-timeseries",
+    "plan": "Free",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "timeseries",
+     "time-series",
+     "time series"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "predix-uaa": [
+   {
+    "credentials": {
+     "dashboardUrl": "https://uaa-dashboard.run.aws-usw02-pr.ice.predix.io/#/login/f1a36488-32bc-4b50-85cc-efaac3af49c7",
+     "issuerId": "https://f1a36488-32bc-4b50-85cc-efaac3af49c7.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token",
+     "subdomain": "f1a36488-32bc-4b50-85cc-efaac3af49c7",
+     "uri": "https://f1a36488-32bc-4b50-85cc-efaac3af49c7.predix-uaa.run.aws-usw02-pr.ice.predix.io",
+     "zone": {
+      "http-header-name": "X-Identity-Zone-Id",
+      "http-header-value": "f1a36488-32bc-4b50-85cc-efaac3af49c7"
+     }
+    },
+    "label": "predix-uaa",
+    "name": "opera-uaa",
+    "plan": "Free",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "15f3ef47-f926-44a4-80ad-752da7204766",
+  "application_name": "opera-solar-soln",
+  "application_uris": [
+   "opera-solar-soln.run.aws-usw02-pr.ice.predix.io"
+  ],
+  "application_version": "0dd44064-5d17-4266-9274-9d35b87c00ec",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 512
+  },
+  "name": "opera-solar-soln",
+  "space_id": "07fad16d-bc86-4472-b247-c2163f29b519",
+  "space_name": "dev",
+  "uris": [
+   "opera-solar-soln.run.aws-usw02-pr.ice.predix.io"
+  ],
+  "users": null,
+  "version": "0dd44064-5d17-4266-9274-9d35b87c00ec"
+ }
+}
+
+User-Provided:
+JAVA_DOCS_URL: https://predixdev.github.io/predix-microservice-cf-spring
+SPRING_PROFILES_ACTIVE: cloud
+
+No running env variables have been set
+
+No staging env variables have been set
+

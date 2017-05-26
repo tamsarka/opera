@@ -1,0 +1,330 @@
+[
+  {
+    "name": "L&T Solar Plant Sites",
+    "checked": false,
+    "children": [
+      {
+        "name": "Chennai Site",
+        "checked": false,
+        "children": [
+         
+          {
+            "name": "EM",
+            "checked": false,
+            "children": [
+              {
+                "name": "TR1",
+                "checked": false,
+                "children": [
+                {
+                  "name": "SMB1",
+                  "checked": false,
+                  "children": [
+                    {
+                      "name": "String 1",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 2",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 3",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 4",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 5",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 6",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 7",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 8",
+                      "checked": false
+                    }]
+                },
+                {
+                  "name": "SMB2",
+                  "checked": false,
+                  "children": [
+                    {
+                      "name": "String 9",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 10",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 11",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 12",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 13",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 14",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 15",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 16",
+                      "checked": false
+                    }]
+                },
+                {
+                  "name": "SMB3",
+                  "checked": false,
+                  "children": [
+                    {
+                      "name": "String 17",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 18",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 19",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 20",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 21",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 22",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 23",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 24",
+                      "checked": false
+                    }]
+                },
+                {
+                  "name": "SMB4",
+                  "checked": false,
+				   "children": [
+                    {
+                      "name": "String 25",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 26",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 27",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 28",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 29",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 30",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 31",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 32",
+                      "checked": false
+                    }]
+                
+                },
+                {
+                  "name": "SMB5",
+                  "checked": false,
+				   "children": [
+                    {
+                      "name": "String 33",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 34",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 35",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 36",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 37",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 38",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 39",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 40",
+                      "checked": false
+                    }]
+                
+                },
+                {
+                  "name": "SMB6",
+                  "checked": false,
+				   "children": [
+                    {
+                      "name": "String 41",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 42",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 43",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 44",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 45",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 46",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 47",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 48",
+                      "checked": false
+                    }]
+                
+                },
+                {
+                  "name": "SMB7",
+                  "checked": false,
+				   "children": [
+                    {
+                      "name": "String 49",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 50",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 51",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 52",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 53",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 54",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 55",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 56",
+                      "checked": false
+                    }]
+                
+                },
+                {
+                  "name": "SMB8",
+                  "checked": false,
+				   "children": [
+                    {
+                      "name": "String 57",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 58",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 59",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 60",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 61",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 62",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 63",
+                      "checked": false
+                    },
+                  {
+                      "name": "String 64",
+                      "checked": false
+                    }]
+                
+                }]
+              }]
+          },
+          {
+            "name": "WSTN",
+            "checked": false
+          }
+        ]
+      }
+    ]
+  }
+]

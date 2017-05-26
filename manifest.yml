@@ -1,0 +1,15 @@
+---
+applications:
+  - name: opera-solar-soln
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    path: target/opera-microservice-1.0.0.jar
+    memory: 1024M
+    timeout : 180
+    services:
+    - opera-uaa
+    - opera-asset
+    - opera-postgres
+    - opera-timeseries
+env:
+   SPRING_PROFILES_ACTIVE : cloud  
+   JAVA_DOCS_URL : https://predixdev.github.io/predix-microservice-cf-spring

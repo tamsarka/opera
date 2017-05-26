@@ -1,0 +1,16 @@
+{
+  "name": "opera",
+  "version": "1.0.0",
+  "description": "Opera",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC"
+}

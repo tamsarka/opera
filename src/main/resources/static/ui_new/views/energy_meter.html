@@ -1,0 +1,221 @@
+<div class="row">
+               <div class="col-lg-12">
+                   <h1 class="page-header" style="margin: 67px 0 20px;">Energy Meter</h1>
+               </div>
+               <!-- /.col-lg-6 -->
+               <div class="col-lg-6">
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
+                         <div class="row">
+                           <div class="col-md-4">
+                       <i class="fa fa-bar-chart-o fa-fw"></i>
+                         OPR & Power AC
+                       </div >
+
+                               <div class="col-md-8">
+                                 <div class="row">
+
+
+                                       <div class="col-md-5" class="input-group date" id="datetimepicker1" >
+                                           <input type="text" class="form-control" placeholder="START" ng-model="start2" datetime-picker hour="23" minute='59' />
+                                       </div>
+                                       <div class="col-md-5"class="input-group date" id="datetimepicker1" >
+                                         <input type="text" class="form-control" placeholder="END" ng-model="end2" datetime-picker hour="23" minute='59' />
+                                       </div>
+                                       <div class="col-md-1"class="input-group date" id="datetimepicker1" ng-click="dp1(start2,end2)">
+                                        <button type="button" class="btn btn-info btn-sm glyphicon glyphicon-circle-arrow-right"></button>
+                                       </div>
+
+                                 </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- /.panel-heading -->
+                       <div class="panel-body">
+                           <div  id="line-chart-multi"></div>
+                       </div>
+                       <!-- /.panel-body -->
+                   </div>
+                   <!-- /.panel -->
+               </div>
+               <div class="col-lg-6">
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
+                         <div class="row">
+                           <div class="col-md-4">
+                       <i class="fa fa-bar-chart-o fa-fw"></i>
+                       Voltage Meter & Current Meter
+                       </div >
+
+                             <div class="col-md-8">
+                               <div class="row">
+
+
+                                     <div class="col-md-5" class="input-group date" id="datetimepicker1" >
+                                         <input type="text" class="form-control" placeholder="START" ng-model="startem" datetime-picker hour="23" minute='59' />
+                                     </div>
+                                     <div class="col-md-5"class="input-group date" id="datetimepicker1" >
+                                       <input type="text" class="form-control" placeholder="END" ng-model="endem" datetime-picker hour="23" minute='59' />
+                                     </div>
+                                     <div class="col-md-1"class="input-group date" id="datetimepicker1" ng-click="VnCem(startem,endem)">
+                                      <button type="button" class="btn btn-info btn-sm glyphicon glyphicon-circle-arrow-right"></button>
+                                     </div>
+
+                               </div>
+                             </div>
+                         </div>
+                       </div>
+                       <!-- /.panel-heading -->
+                       <div class="panel-body">
+
+                               <div  id="VoltageCurrent"></div>
+
+                       </div>
+                       <!-- /.panel-body -->
+                   </div>
+                   <!-- /.panel -->
+               </div>
+               <div class="col-lg-6">
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
+                           Alerts Report
+                       </div>
+                       <!-- /.panel-heading -->
+                       <div class="panel-body">
+                           <div class="table-responsive">
+                               <table class="table">
+                                   <thead>
+                                       <tr>
+                                          <th>Priority</th>
+                                           <th>Name</th>
+                                           <th>Occurance</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Comm_Failure</td>
+                                           <td>3</td>
+                                       </tr>
+                                       <tr>
+                                       <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: yellow;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Voltage_Low</td>
+                                           <td>2</td>
+                                       </tr>
+                                       <tr>
+                                       <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Frequency_High</td>
+                                           <td>4</td>
+                                       </tr>
+                                       <tr>
+                                       <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Voltage_High</td>
+                                           <td>8</td>
+                                       </tr>
+                                       <tr>
+                                       <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Frequency_Low</td>
+                                           <td>5</td>
+                                       </tr>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Phase-Shift_Failure</td>
+                                           <td>6</td>
+                                       </tr>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: yellow;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Phase-A_Low</td>
+                                           <td>2</td>
+                                       </tr>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Phase-A_High</td>
+                                           <td>5</td>
+                                       </tr>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: aqua;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Phase-B_High</td>
+                                           <td>8</td>
+                                       </tr>
+                                       <tr>
+                                          <td><div style="border-radius: 50%;width: 2px;height: 2px;padding: 8px;margin: 0 auto;background: red;color: #000;text-align: center;"></div></td>
+                                           <td>Meter_Phase-B_Low</td>
+                                           <td>5</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                              <div>
+                                <div style="width: 10px; height: 10px; background: red; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">High</div>
+                              </div>
+                              <div style="float:left; margin-left:5px;">
+                                <div style="width: 10px; height: 10px; background: yellow; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">Medium</div>
+                              </div>
+                              <div style="float:left; margin-left:5px;">
+                                <div style="width: 10px; height: 10px; background: aqua; float:left;"></div> 
+                                <div style="float:left;margin-left: 5px;margin-top: -5px;">Low</div>
+                              </div> 
+                                <!-- <div style="width: 10px; height: 10px; background: yellow"></div> Medium
+                                <div style="width: 10px; height: 10px; background: aqua"></div> -->
+                           </div>
+                           <!-- /.table-responsive -->
+                       </div>
+                       <!-- /.panel-body -->
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                   <div class="panel panel-default">
+                       <div class="panel-heading">
+                           Asset Properties
+                       </div>
+                       <!-- /.panel-heading -->
+                       <div class="panel-body">
+                           <div class="table-responsive">
+                               <table class="table">
+                                   <thead>
+                                       <tr>
+                                           <th>Manufacturer</th>
+                                           <th>EDMI</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <td>Type:</td>
+                                           <td>DC SCB TRICHECK 24 Input</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Description:</td>
+                                           <td>24 DC Inputs</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Rated Output Power:</td>
+                                           <td>300</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Rated DC Voltage:</td>
+                                           <td>1000</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Min. Internal Temperature:</td>
+                                           <td>-10</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Max. Internal Temperature:</td>
+                                           <td>70</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Applicable Standard:</td>
+                                           <td>IEC 61326-1-2005</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+
+                           </div>
+                           <!-- /.table-responsive -->
+                       </div>
+                       <!-- /.panel-body -->
+                   </div>
+               </div>
+               <!-- /.col-lg-6 -->
+           </div>

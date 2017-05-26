@@ -1,0 +1,16 @@
+#properties for running locally or for unit tests
+logging.level.root=INFO
+logging.level.org.springframework=INFO
+#<currentworkingdir>/config/application.properties are local ovverrides to src/main/resources(aka classpath)/application.properties
+server.port=9092
+
+spring.profiles.active=local
+
+springfox.documentation.swagger.v2.path=/
+java.docs.url=https://siteundermaintainence/
+
+security.oauth2.client.clientId=acsbootstrap
+security.oauth2.client.clientSecret=acsbootstrap
+security.oauth2.client.accessTokenUri=https://7dacf889-0c4b-4f09-9a2a-0dcd042ee186.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
+security.oauth2.client.userAuthorizationUri=https://7dacf889-0c4b-4f09-9a2a-0dcd042ee186.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/authorize
+security.oauth2.resource.userInfoUri=https://7dacf889-0c4b-4f09-9a2a-0dcd042ee186.predix-uaa.run.aws-usw02-pr.ice.predix.io/userinfo

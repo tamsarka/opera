@@ -1,0 +1,47 @@
+
+UAA uri:
+https://f1a36488-32bc-4b50-85cc-efaac3af49c7.predix-uaa.run.aws-usw02-pr.ice.predix.io
+admin/secret
+
+Client Credentials:
+client/client
+
+Users Credentials:
+user/user
+
+cf login -a https://api.system.aws-usw02-pr.ice.predix.io
+
+cf bind-service opera-solar-soln opera-uaa
+cf bind-service opera-solar-soln opera-asset
+cf bind-service opera-solar-soln opera-postgres
+cf bind-service opera-solar-soln opera-timeseries
+cf bind-service opera-solar-soln opera-acs
+
+opera-uaa
+opera-asset
+opera-postgres
+opera-timeseries
+opera-acs
+
+https://predix-asset.run.aws-usw02-pr.ice.predix.io
+
+
+"predix-acs": "a18db8c7-3e55-4cac-89f1-44f1731505a2",
+"predix-asset": "26ab08ae-74df-4545-931b-c18cd182d0f5",
+"predix-timeseries": "ad7a7f00-9dcb-4454-a492-96ec8d26fff7",
+
+
+timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.query
+timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.ingest
+timeseries.zones.ad7a7f00-9dcb-4454-a492-96ec8d26fff7.user
+predix-acs.zones.a18db8c7-3e55-4cac-89f1-44f1731505a2.user
+predix-asset.zones.26ab08ae-74df-4545-931b-c18cd182d0f5.user
+
+
+https://opera-solar-soln.run.aws-usw02-pr.ice.predix.io
+
+https://github.com/Enterprise-connect/ec-sdk/wiki/EC-Agent
+https://www.predix.io/docs#s2BX5lIk
+https://docs.cloudfoundry.org/adminguide/enabling-tcp-routing.html
+http://dojoblog.emc.com/tcp-routing/tcp-routing-and-ssl/
+

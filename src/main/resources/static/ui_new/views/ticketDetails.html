@@ -1,0 +1,115 @@
+<div class="content-wrapper" >
+    <!-- Main content -->
+    <section class="content" ng-init="getTicketDetails()">
+        <div class="row">
+          <div class="col-md-6">            
+            <div class="box box-primary">
+              <div class="box-body box-profile">               
+
+                <h3 class="profile-username text-center">Ticket Number : REQ{{ticket.incidentID | numberFixedLen:4}}</h3>
+
+                <p class="text-muted text-center">
+                  Priority : {{ticket.priority}}
+                </p>
+
+                <p class="text-muted text-center">
+                  Ticket Status : {{ticket.ticketStatusCurr}}
+                </p>
+
+                <ul class="list-group list-group-unbordered">
+                  <li class="list-group-item">
+                    <b>Serial Number</b> <a class="pull-right">{{ticket.serialNumber}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Asset Name</b> <a class="pull-right">{{ticket.assetName}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Actual Failure Area</b> <a class="pull-right">{{ticket.actualFailureArea}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Equipment Status</b> <a class="pull-right">{{ticket.equipmentStatus}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Functional ID</b> <a class="pull-right">{{ticket.functionalID}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Indicated Failure Area</b> <a class="pull-right">{{ticket.indicatedFailureArea}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Log Date</b> <a class="pull-right">{{ticket.logDate}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Model Number</b> <a class="pull-right">{{ticket.modelNumber}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Occurence Time</b> <a class="pull-right">{{ticket.occurenceTime}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Comments</b> <a class="pull-right">{{ticket.comments}}</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <b>Resolution Comments</b> <a class="pull-right">{{ticket.resolutionComments}}</a>
+                  </li>
+                </ul>
+
+                <textarea class="form-control" name="resolution" rows="2" id="content" ng-model="ticket.newComment"></textarea>
+                <br />
+                <button ng-click="sendComment(ticket)" class="btn btn-success btn-block"><b>Send</b></button>
+              </div>
+              <!-- /.box-body -->
+            </div>
+          </div>
+
+</div>
+        <div class="col-md-6" ng-init="getComment()">
+          <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs"> <!-- getUserMembership(); -->
+              <li ng-class="{active:isSet(1)}"><a ng-init="setTab(1)" href="" ng-click="setTab(1)" data-toggle="tab">Comments</a></li>
+              <!-- <li ng-class="{active:isSet(2)}"><a href="" ng-click="setTab(2)">Comments</a></li> -->
+              <!-- <li ng-class="{active:isSet(3)}"><a href="" ng-click="setTab(3)">Supporters</a></li> -->
+            </ul>
+            <div class="tab-content" style="padding-bottom: 8%;">             
+              <div ng-show="tab == 1">                
+                <!-- <div class="commentContentDiv">
+                  <h2>Comments</h2>
+                </div> -->
+
+                <div class="box-footer box-comments">
+                  <div class="box-comment" ng-repeat = "comment in ticketComment">
+                    <!-- User image -->
+                    <div class="comment-text">
+                          <span class="username">
+                            {{comment.commenteByUser}}
+                            <span class="text-muted pull-right">{{comment.lastupdatedDate}}</span>
+                          </span>
+                      {{comment.commentDesc}}
+                    </div>
+                  </div>                  
+                </div>
+                <br />
+                <a class="btn btn-primary pull-right" href="#/dashboardPage"><b>Back to Dashboard</b></a>
+                
+              </div>
+              <!-- <div ng-show="tab == 2">
+                <div>                 
+                  <h2>Comments</h2>
+                </div>
+              </div> -->
+            </div>                            
+            </div>              
+          </div>
+        </div>
+        </div>
+    </section>
+</div>
+

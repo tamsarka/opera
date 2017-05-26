@@ -1,0 +1,13 @@
+<li>
+	<span ng-click="toggleVisibility(node)"> {{ ( node.childrenVisibility && node.children.length ) ? '+' : '-' }}</span>
+	<!-- <treecontrol class="tree" tree-model="treedata" on-selection="showSelected(node)"> -->
+	<!-- <button class="btn" ng-click='go()'>Open</button>
+	</treecontrol> -->
+	<span>
+	<button class="btn" ng-click='go(node.name)'>Open</button>
+	
+	  <a ui-sref="dashboard"><i class="fa fa-sitemap fa-fw"></i><span ng-click="dashboard()">{{ node.name }}</span> <span class="fa arrow"></span></a>
+		
+
+	</span>
+</li>
